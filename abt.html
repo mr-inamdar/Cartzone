@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cartzone</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="icon.png">
+        <link rel="icon" type="image/png" href="icon.png">
+    </head>
+
+    <body>
+
+        <div id="abt_main">
+            <div class="header">
+                <div class="mobile_header">
+                    <img src="pics/logo.png" alt="">
+                    <div>
+                        <input class="search_input" type="text" placeholder="Search..." placeholder="Search..." onclick="activateSuggestions()" oninput="showSuggestions()">
+                        <ul class="suggestionsList"></ul>
+                    </div>
+                    <img id="search" src="loupe.png" alt="" onclick="make_new_page()">
+                </div>
+
+                <div id="mobile_mnu">
+                    <img src="bars-solid-full.svg" alt="" onclick="make_flex()">
+                </div>
+                <div class="links">
+                    <div id="close" onclick="display_of_manu()"><i class="fa-solid fa-square-xmark"></i></div>
+                    <a href="index.html">Home</a>
+                    <a href="search_result.html" onclick="make_new_page('shop now')">Shop</a>
+                    <a href="abt.html" id="activeted">About</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </div>
+            <div class="fake_header2"></div>
+
+            <section id="page_header" class="about_header">
+                <h2>#KnowUs</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.!</p>
+            </section>
+
+            <section id="about_head">
+                <img src="pics/abt.png" alt="">
+                <div>
+                    <h2>Who We Are?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas cumque odit hic temporibus
+                        corrupti sapiente quasi? Est magni rem possimus dolores. Numquam officia cupiditate unde
+                        possimus hic, dicta soluta labore nemo, quibusdam minima itaque vero dolorum id quasi. 
+                        Neque aspernatur aperiam dicta. Minima suscipit doloribus dignissimos! Vero modi excepturi
+                    ea?</p>
+                    <abbr title="">Create stunning images with as much or as little control as you 
+                        like thanks to a choice of Basic and Creative modes.
+                    </abbr>
+                    <br>
+                    <br>
+                    <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">Create stunning images with as much or as little control as you 
+                        like thanks to a choice of Basic and Creative modes.
+                    </marquee>
+                </div>
+            </section>
+
+            <div id="feature">
+                <div class="fe_box">
+                    <img src="pics/features/f1.png" alt="">
+                    <h6>Free Shipping</h6>
+                </div>
+                <div class="fe_box">
+                    <img src="pics/features/f2.png" alt="">
+                    <h6>Online Order</h6>
+                </div>
+                <div class="fe_box">
+                    <img src="pics/features/f3.png" alt="">
+                    <h6>Seve Money</h6>
+                </div>
+                <div class="fe_box">
+                    <img src="pics/features/f4.png" alt="">
+                    <h6>Promotions</h6>
+                </div>
+                <div class="fe_box">
+                    <img src="pics/features/f5.png" alt="">
+                    <h6>Happy Sell</h6>
+                </div>
+                <div class="fe_box">
+                    <img src="pics/features/f6.png" alt="">
+                    <h6>24/7 Suport</h6>
+                </div>
+            </div>
+            <section id="newsletter" class="section-p1 section-m1">
+                <div class="newstext">
+                    <h4>Sign Up For Newsletters</h4>
+                    <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Your email address">
+                    <button class="normal">Sign Up</button>
+                </div>
+            </section>
+
+            <footer class="page">
+                <div class="foot-panel-1">
+                     ↑ Back to Top
+                </div>
+                <div class="foot-panel-2">
+                    <h5>🛒 Cartzone – Your one-stop destination for flavor-packed cravings and fashion-forward finds, delivered to your door in a single swipe!</h5>
+                    <div id="ul_dev">
+                        
+                        <ul>
+                            <span><u>QUICK LINKS</u></span>
+                            <li><a href="search_result.html" onclick="make_new_page('shop now')">Shop</a></li>
+                            <li><a href="abt.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        
+                        <ul>
+                            <span><u>HELP</u></span>
+                            <li>FPQ</li>
+                            <li>Shipping & Returns</li>
+                            <li>Store Policy</li>
+                            <li>Payment Methods</li>
+                        </ul>
+
+                        <ul>
+                            <span><u>FOLLOW US</u></span>
+                            <li><a href="https://www.instagram.com/iam.zeeshan__/">Instagram</a></li>
+                            <li>Facebook</li>
+                            <li>Tuter</li>
+                            <li>TouTube</li>
+                        </ul>
+                    </div>
+                    <div id="about_us">
+                        <a href="#"><img src="pics/logo.png" alt="logo"></a>
+                        <span>Cartzone-Online Shop</span>
+                    </div>
+                </div>
+                <div class="foot-panel-3">
+                    c 2025 Cartzone India. All Rights Reserved
+                </div>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

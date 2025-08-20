@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cartzone</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="icon.png">
+    </head>
+
+    <body>
+        <div id="sp_main">
+            <div class="header">
+            <div class="mobile_header">
+                <img src="pics/logo.png" alt="">
+                <div>
+                    <input class="search_input" type="text" placeholder="Search..." placeholder="Search..." onclick="activateSuggestions()" oninput="showSuggestions()">
+                    <ul class="suggestionsList"></ul>
+                </div>
+                <img id="search" src="loupe.png" alt="" onclick="make_new_page()">
+            </div>
+
+            <div id="mobile_mnu">
+                <img src="bars-solid-full.svg" alt="" onclick="make_flex()">
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="search_result.html" onclick="make_new_page('shop now')" id="activeted">Shop</a>
+                <a href="abt.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html">Cart</a>
+            </div>
+            </div>
+            <div class="fake_header2"></div>
+
+            <section id="prodetail">
+                <div class="single_pro_pic">
+                    <img src="pics/products_pic/kurti.jpg" width="100%" height="90%" id="main_pic" alt="">
+                    <div class="small_pic_group">
+                        <div class="small_pic_col">
+                            <img src="pics/products_pic/kurti.jpg" width="100%" height="100%" class="small_pic">
+                        </div>
+                        <div class="small_pic_col">
+                            <img src="pics/products_pic/kurti1.jpg" width="100%" class="small_pic">
+                        </div>
+                        <div class="small_pic_col">
+                            <img src="pics/products_pic/kurti4.jpg" width="100%" class="small_pic">
+                        </div>
+                        <div class="small_pic_col">
+                            <img src="pics/products_pic/kurti10.jpg" width="100%" class="small_pic">
+                        </div>
+                    </div>
+                </div>
+                <div class="single_pro_detail">
+                    <h6>Home / T-Shirt</h6>
+                    <h4>Men's Fashion T Shirt</h4>
+                    <h2>$139.009</h2>
+                    <select name="" id="">
+                        <option value="Select">Select Size</option>
+                        <option value="Select">XL</option>
+                        <option value="Select">XXL</option>
+                        <option value="Select">Small</option>
+                        <option value="Select">Large</option>
+                    </select>
+                    <input type="number" value="1" min="1">
+                    <button class="normal">Add To Cart</button>
+                    <h4>Product Details</h4>
+                    <span>The Gildan Ultra Cotton T-shirt is made from a substrantial 6.0 oz. per sq. yd. fabric
+                        constructed from 100% cotton, this classic fit preshrunk jersey knit provides unnatched 
+                        comfort with each wear. Featuring a taped  neck and shoulder, and a seamless double-needle collar,
+                        and available in a range of colours, it offers it all in the ultimate head-turning package.
+                    </span>
+                </div>
+            </section>
+            <div id="sanple">
+                <h2>New Arrivals</h2>
+                <p>Devali Collection New Morden Design</p>
+                <div class="pro_container">
+                    <div class="pro">
+                        <img src="pics/products/np1.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>Soft and silky Teddy-Bear</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>&#8377;78</h4>
+                        </div>
+                       <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></i></a>
+                    </div>
+                    <div class="pro">
+                        <img src="pics/products/np2.jpg" alt="">
+                        <div class="des">
+                            <span>ARA</span>
+                            <h5>Phlazooo</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>&#8377;78</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></i></a>
+                    </div>
+                    <div class="pro">
+                        <img src="pics/products/np3.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>Men Suit in black colour</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>&#8377;78</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></i></a>
+                    </div>
+                    <div class="pro">
+                        <img src="pics/products/np4.jpg" alt="">
+                        <div class="des">
+                            <span>Xeeee</span>
+                            <h5>Mobile</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>&#8377;78</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <section id="newsletter">
+                <div class="newstext">
+                    <h4>Sign Up For Newsletters</h4>
+                    <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Your email address">
+                    <button class="normal">Sign Up</button>
+                </div>
+            </section>
+            <footer class="page">
+                <div class="foot-panel-1">
+                     ↑ Back to Top
+                </div>
+                <div class="foot-panel-2">
+                    <h5>🛒 Cartzone – Your one-stop destination for flavor-packed cravings and fashion-forward finds, delivered to your door in a single swipe!</h5>
+                    <div id="ul_dev">
+                        
+                        <ul>
+                            <span><u>QUICK LINKS</u></span>
+                            <li><a href="search_result.html" onclick="make_new_page('shop now')">Shop</a></li>
+                            <li><a href="abt.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        
+                        <ul>
+                            <span><u>HELP</u></span>
+                            <li>FPQ</li>
+                            <li>Shipping & Returns</li>
+                            <li>Store Policy</li>
+                            <li>Payment Methods</li>
+                        </ul>
+
+                        <ul>
+                            <span><u>FOLLOW US</u></span>
+                            <li><a href="https://www.instagram.com/iam.zeeshan__/">Instagram</a></li>
+                            <li>Facebook</li>
+                            <li>Tuter</li>
+                            <li>TouTube</li>
+                        </ul>
+                    </div>
+                    <div id="about_us">
+                        <a href="#"><img src="pics/logo.png" alt="logo"></a>
+                        <span>Cartzone-Online Shop</span>
+                    </div>
+                </div>
+                <div class="foot-panel-3">
+                    c 2025 Cartzone India. All Rights Reserved
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            var main_pic = document.getElementById("main_pic");
+            var small_pic = document.getElementsByClassName("small_pic");
+            small_pic[0].onclick = function(){
+                main_pic.src = small_pic[0].src;
+            }
+            small_pic[1].onclick = function(){
+                main_pic.src = small_pic[1].src;
+            }
+            small_pic[2].onclick = function(){
+                main_pic.src = small_pic[2].src;
+            }
+            small_pic[3].onclick = function(){
+                main_pic.src = small_pic[3].src;
+            }
+        </script>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

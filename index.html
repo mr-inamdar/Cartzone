@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartzone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <div id="container">
+        <header><div id="logo"><a href="#"><img src="pics/logo.png" alt="Insta"></a></div><div id="bar"><img src="bars-solid-full.svg" alt="bar" id="popup" onclick="popup()"></div></header>
+        <div id="fake_header"></div>
+        <div id="popup_page">
+            <div id="input">
+                <div>
+                    <input class="search_input" type="text" placeholder="Search..." onclick="activateSuggestions()" oninput="showSuggestions()">
+                    <ul class="suggestionsList"></ul>
+                </div>
+                <img src="loupe.png" alt="" onclick="make_new_page()">
+            </div>
+            <div id="about_us">
+                <ul>
+                    <h2>About Us</h2>
+                    <li>E-Commerce Wbsite</li>
+                    <li>not more functional</li>
+                    <li>Only HTML,CSS & JS Use</li>
+                </ul>
+                <ul>
+                    <h2>My Socialmedia Accs</h2>
+                    <li>GitHub: mr-inamdar</li>
+                    <li>Insta: iam.zeeshan__</li>
+                    <li>Fesbook: NA</li>
+                </ul>
+            </div>
+            <div id="contact">
+                <img src="instagram-brands-solid-full.svg" alt="">
+                <a href="https://www.instagram.com/iam.zeeshan__/">iam.zeeshan__</a>
+            </div>
+        </div>
+        <div id="pages_container">
+            <div class="header">
+                <div class="mobile_header">
+                    <img src="pics/logo.png" alt="">
+                    <div>
+                        <input class="search_input" type="text" placeholder="Search..." placeholder="Search..." onclick="activateSuggestions()" oninput="showSuggestions()">
+                        <ul class="suggestionsList"></ul>
+                    </div>
+                  <img id="search" src="loupe.png" alt="" onclick="make_new_page()">
+                </div>
+
+                <div id="mobile_mnu">
+                    <img src="bars-solid-full.svg" alt="" onclick="make_flex()">
+                </div>
+                <div class="links">
+                    <div id="close" onclick="display_of_manu()"><i class="fa-solid fa-square-xmark"></i></div>
+                    <a href="index.html" id="activeted">Home</a>
+                    <a href="search_result.html" onclick="make_new_page('shop now')">Shop</a>
+                    <a href="abt.html">About</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </div>
+            <div class="fake_header2"></div>
+            <div class="page" id="page1">
+                <div id="des">
+                    <h4>Trade-in-offer</h4>
+                    <h2>Super value deals</h2>
+                    <h1>On all products</h1>
+                    <p>Save more with coupons & up to 70% off! </p>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+
+            <div id="feature">
+                <div class="fe_box">
+                    <img src="pics/features/f1.png" alt="">
+                    <h6>Free Shipping</h6>
+                </div>
+                <div class="fe_box">
+                    <img src="pics/features/f2.png" alt="">
+                    <h6>Online Order</h6>
+                </div>
+                <div class="fe_box">
+                    <img src="pics/features/f3.png" alt="">
+                    <h6>Seve Money</h6>
+                </div>
+                <div class="fe_box">
+                    <img src="pics/features/f4.png" alt="">
+                    <h6>Promotions</h6>
+                </div>
+                <div class="fe_box">
+                    <img src="pics/features/f5.png" alt="">
+                    <h6>Happy Sell</h6>
+                </div>
+                <div class="fe_box">
+                    <img src="pics/features/f6.png" alt="">
+                    <h6>24/7 Suport</h6>
+                </div>
+            </div>
+            <div id="sanple" class="page">
+                <h2>New Arrivals</h2>
+                <p>Devali Collection New Morden Design</p>
+                <div class="pro_container">
+                    <button class="left" onclick="next_slide()">&#10094</button>
+                    <div class="pro" data-id="NA">
+                        <img src="pics/products/np1.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>Soft and silky Teddy-Bear</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>&#8377;78</h4>
+                        </div>
+                       <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></i></a>
+                    </div>
+                    <div class="pro mo_deactive" data-id="NA">
+                        <img src="pics/products/np2.jpg" alt="">
+                        <div class="des">
+                            <span>ARA</span>
+                            <h5>Phlazooo</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>&#8377;78</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></i></a>
+                    </div>
+                    <div class="pro mo_deactive" data-id="103">
+                        <img src="pics/products/np3.jpg" alt="">
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>Men Suit in black colour</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>&#8377;78</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></i></a>
+                    </div>
+                    <div class="pro mo_deactive" data-id="NA">
+                        <img src="pics/products/np4.jpg" alt="">
+                        <div class="des">
+                            <span>Xeeee</span>
+                            <h5>Mobile</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>&#8377;78</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></i></a>
+                    </div>
+                    <button class="right" onclick="prev_slide()">&#10095</button>
+                </div>
+            </div>
+            <div id="banner" class="page">
+                <div id="v_banner">
+                    <video src="pics/banner/bvideo1.mp4" autoplay muted loop playsinline></video>
+                    <div class="overlay-content">
+                        <h1>SEASONAL SALE</h1>
+                        <h5>Winter Collection -50% OFF</h5>
+                    </div>
+                </div>
+                <div id="sub_container">
+                    <div class="pic_banner">
+                        <h4>crazy deals</h4>
+                        <h2>buy 1 get 1 free</h2>
+                        <span>The best classic dress is on sale at cara</span><br>
+                        <button class="white">Learn More</button>
+                    </div>
+                    <div class="pic_banner b2">
+                        <h4>spring/summer</h4>
+                        <h2>upcomming season</h2>
+                        <span>The best classic dress is on sale at cara</span><br>
+                        <button class="white">Collection</button>
+                    </div>
+                </div>
+            </div>
+            <div id="banner3">
+                <div class="banner_box">
+                    <h2>SEASONAL SALE</h2>
+                    <h3>Winter Collection <span>-50% OFF</span></h3>
+                </div>
+                <div class="banner_box b2">
+                    <h2>NEW FOOTWEAR COLLECTION</h2>
+                    <h3>Spring/Summer 2022</h3>
+                </div>
+                <div class="banner_box b3">
+                    <h2>T-SHIRT</h2>
+                    <h3>New Trendy Prints</h3>
+                </div>
+            </div>
+            <section id="newsletter">
+                <div class="newstext">
+                    <h4>Sign Up For Newsletters</h4>
+                    <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Your email address">
+                    <button class="normal">Sign Up</button>
+                </div>
+            </section>
+            <footer class="page">
+                <div class="foot-panel-1">
+                     ↑ Back to Top
+                </div>
+                <div class="foot-panel-2">
+                    <h5>🛒 Cartzone – Your one-stop destination for flavor-packed cravings and fashion-forward finds, delivered to your door in a single swipe!</h5>
+                    <div id="ul_dev">
+                        
+                        <ul>
+                            <span><u>QUICK LINKS</u></span>
+                            <li><a href="search_result.html" onclick="make_new_page('shop now')">Shop</a></li>
+                            <li><a href="abt.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        
+                        <ul>
+                            <span><u>HELP</u></span>
+                            <li>FPQ</li>
+                            <li>Shipping & Returns</li>
+                            <li>Store Policy</li>
+                            <li>Payment Methods</li>
+                        </ul>
+
+                        <ul>
+                            <span><u>FOLLOW US</u></span>
+                            <li><a href="https://www.instagram.com/iam.zeeshan__/">Instagram</a></li>
+                            <li>Facebook</li>
+                            <li>Tuter</li>
+                            <li>TouTube</li>
+                        </ul>
+                    </div>
+                    <div id="about_us">
+                        <a href="#"><img src="pics/logo.png" alt="logo"></a>
+                        <span>Cartzone-Online Shop</span>
+                    </div>
+                </div>
+                <div class="foot-panel-3">
+                    c 2025 Cartzone India. All Rights Reserved
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

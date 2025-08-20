@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cartzone</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="icon.png">
+    </head>
+
+    <body>
+        <div id="cart_main">
+            <div class="header">
+                <div class="mobile_header">
+                    <img src="pics/logo.png" alt="">
+                    <div>
+                        <input class="search_input" type="text" placeholder="Search..." placeholder="Search..." onclick="activateSuggestions()" oninput="showSuggestions()">
+                        <ul class="suggestionsList"></ul>
+                    </div>
+                  <img id="search" src="loupe.png" alt="" onclick="make_new_page()">
+                </div>
+
+                <div id="mobile_mnu">
+                    <img src="bars-solid-full.svg" alt="" onclick="make_flex()">
+                </div>
+                <div class="links">
+                    <div id="close" onclick="display_of_manu()"><i class="fa-solid fa-square-xmark"></i></div>
+                    <a href="index.html">Home</a>
+                    <a href="search_result.html" onclick="make_new_page('shop now')">Shop</a>
+                    <a href="abt.html">About</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="cart.html" id="activeted">Cart</a>
+                </div>
+            </div>
+            <div class="fake_header2"></div>
+            <section id="page_header" class="cart_header">
+                <h2>#let's_talk</h2>
+                <p>LEAVE A MESSAGE. We love to hear from you!</p>
+            </section>
+
+            <section id="cart" class="section-p1">
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>Remove</td>
+                            <td>Image</td>
+                            <td>Product</td>
+                            <td>Price</td>
+                            <td>Quantity</td>
+                            <td>Subtotal</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                            <td><img src="pics/products_pic/kurta.jpg" alt=""></td>
+                            <td>Cartoon Astronaut T-Shirts</td>
+                            <td>$118.19</td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td>$118.19</td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                            <td><img src="pics/products_pic/kurti.jpg" alt=""></td>
+                            <td>Cartoon Astronaut T-Shirts</td>
+                            <td>$118.19</td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td>$118.19</td>
+                        </tr>
+                        <tr>
+                            <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                            <td><img src="pics/products_pic/mthree_peace1.jpg" alt=""></td>
+                            <td>Cartoon Astronaut T-Shirts</td>
+                            <td>$118.19</td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td>$118.19</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="cart_add" class="section-p1">
+                <div id="coupon">
+                    <h3>Apply Coupon</h3>
+                    <div>
+                        <input type="text" placeholder="Enter Your Coupon">
+                        <button class="normal">Apply</button>
+                    </div>
+                </div>
+                <div id="subtotal">
+                    <h3>Cart Total</h3>
+                    <table>
+                        <tr>
+                            <td>Cart Subtotal</td>
+                            <td>$ 335</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>$ 335</strong></td>
+                        </tr>
+                    </table>
+                    <button class="normal">Proceed to checkout</button>
+                </div>
+            </section>
+
+            <section id="newsletter">
+                <div class="newstext">
+                    <h4>Sign Up For Newsletters</h4>
+                    <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Your email address">
+                    <button class="normal">Sign Up</button>
+                </div>
+            </section>
+            <footer class="page">
+                <div class="foot-panel-1">
+                     ↑ Back to Top
+                </div>
+                <div class="foot-panel-2">
+                    <h5>🛒 Cartzone – Your one-stop destination for flavor-packed cravings and fashion-forward finds, delivered to your door in a single swipe!</h5>
+                    <div id="ul_dev">
+                        
+                        <ul>
+                            <span><u>QUICK LINKS</u></span>
+                            <li><a href="search_result.html" onclick="make_new_page('shop now')">Shop</a></li>
+                            <li><a href="abt.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        
+                        <ul>
+                            <span><u>HELP</u></span>
+                            <li>FPQ</li>
+                            <li>Shipping & Returns</li>
+                            <li>Store Policy</li>
+                            <li>Payment Methods</li>
+                        </ul>
+
+                        <ul>
+                            <span><u>FOLLOW US</u></span>
+                            <li><a href="https://www.instagram.com/iam.zeeshan__/">Instagram</a></li>
+                            <li>Facebook</li>
+                            <li>Tuter</li>
+                            <li>TouTube</li>
+                        </ul>
+                    </div>
+                    <div id="about_us">
+                        <a href="#"><img src="pics/logo.png" alt="logo"></a>
+                        <span>Cartzone-Online Shop</span>
+                    </div>
+                </div>
+                <div class="foot-panel-3">
+                    c 2025 Cartzone India. All Rights Reserved
+                </div>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+
+</html>

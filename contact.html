@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cartzone</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="icon.png">
+    </head>
+
+    <body>
+        <div id="c_main">
+            <div class="header">
+                <div class="mobile_header">
+                    <img src="pics/logo.png" alt="">
+                    <div>
+                        <input class="search_input" type="text" placeholder="Search..." placeholder="Search..." onclick="activateSuggestions()" oninput="showSuggestions()">
+                        <ul class="suggestionsList"></ul>
+                    </div>
+                  <img id="search" src="loupe.png" alt="" onclick="make_new_page()">
+                </div>
+
+                <div id="mobile_mnu">
+                    <img src="bars-solid-full.svg" alt="" onclick="make_flex()">
+                </div>
+                <div class="links">
+                    <div id="close" onclick="display_of_manu()"><i class="fa-solid fa-square-xmark"></i></div>
+                    <a href="index.html">Home</a>
+                    <a href="search_result.html" onclick="make_new_page('shop now')">Shop</a>
+                    <a href="abt.html">About</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html" id="activeted">Contact</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </div>
+            <div class="fake_header2"></div>
+            <section id="page_header" class="c_header">
+                <h2>#let's_talk</h2>
+                <p>LEAVE A MESSAGE. We love to hear from you!</p>
+            </section>
+            
+            <section id="contact_detail" class="section-p1">
+                <div class="detail">
+                    <span>GET IN TOUCH</span>
+                    <h2>Visit one of our agency locations or contact us today</h2>
+                    <h3>Head office</h3>
+                    <div>
+                        <li>
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <p>56 Glassford Street Glasgow G1 1UL New Youk</p>
+                        </li>
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            <p>contact@example.com</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <p>+91 XXXXX XXXXX</p>
+                        </li>
+                        <li>
+                            <i class="far fa-clock"></i>
+                            <p>Monday to Satuday: 9.00am to 16.00pm</p>
+                        </li>
+                    </div>
+                </div>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.466992550083!2d73.82396757391768!3d18.552973468186217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf0eed1beca7%3A0xf07ab6b613c2af51!2sSavitribai%20Phule%20Pune%20University!5e0!3m2!1sen!2sin!4v1755685062645!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section id="form_detail">
+                <form action="">
+                    <span>LEAVE A MESSAGE</span>
+                    <h2>We love to hear from u</h2>
+                    <input type="text" placeholder="Ur Name">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ur Message"></textarea>
+                    <button class="normal">Submit</button>
+                </form>
+                <div class="peepal">
+                    <div>
+                        <img src="pics/contact/p1.jpeg" alt="">
+                        <p><span>Efim Shaikh</span> Senior Marketing Manager <br>
+                        Phone: +91 XXXXX XXXXX <br>E-mail: contact@example.com</p>
+                    </div>
+                    <div>
+                        <img src="pics/contact/p3.jpeg" alt="">
+                        <p><span>Zavion Inamdar</span> Senior Marketing Manager <br>
+                        Phone: +91 XXXXX XXXXX <br>E-mail: contact@example.com</p>
+                    </div>
+                    <div>
+                        <img src="pics/contact/p2.jpeg" alt="">
+                        <p><span>Zavii Khan</span> Senior Marketing Manager <br>
+                        Phone: +91 XXXXX XXXXX <br>E-mail: contact@example.com</p>
+                    </div>
+                </div>
+            </section>
+            <section id="newsletter">
+                <div class="newstext">
+                    <h4>Sign Up For Newsletters</h4>
+                    <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Your email address">
+                    <button class="normal">Sign Up</button>
+                </div>
+            </section>
+
+            <footer class="page">
+                <div class="foot-panel-1">
+                     ↑ Back to Top
+                </div>
+                <div class="foot-panel-2">
+                    <h5>🛒 Cartzone – Your one-stop destination for flavor-packed cravings and fashion-forward finds, delivered to your door in a single swipe!</h5>
+                    <div id="ul_dev">
+                        
+                        <ul>
+                            <span><u>QUICK LINKS</u></span>
+                            <li><a href="search_result.html" onclick="make_new_page('shop now')">Shop</a></li>
+                            <li><a href="abt.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        
+                        <ul>
+                            <span><u>HELP</u></span>
+                            <li>FPQ</li>
+                            <li>Shipping & Returns</li>
+                            <li>Store Policy</li>
+                            <li>Payment Methods</li>
+                        </ul>
+
+                        <ul>
+                            <span><u>FOLLOW US</u></span>
+                            <li><a href="https://www.instagram.com/iam.zeeshan__/">Instagram</a></li>
+                            <li>Facebook</li>
+                            <li>Tuter</li>
+                            <li>TouTube</li>
+                        </ul>
+                    </div>
+                    <div id="about_us">
+                        <a href="#"><img src="pics/logo.png" alt="logo"></a>
+                        <span>Cartzone-Online Shop</span>
+                    </div>
+                </div>
+                <div class="foot-panel-3">
+                    c 2025 Cartzone India. All Rights Reserved
+                </div>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+
+</html>

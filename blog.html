@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cartzone</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="icon.png">
+    </head>
+
+    <body>
+        <div id="blog_main">
+            <div class="header">
+                <div class="mobile_header">
+                    <img src="pics/logo.png" alt="">
+                    <div>
+                        <input class="search_input" type="text" placeholder="Search..." placeholder="Search..." onclick="activateSuggestions()" oninput="showSuggestions()">
+                        <ul class="suggestionsList"></ul>
+                    </div>
+                  <img id="search" src="loupe.png" alt="" onclick="make_new_page()">
+                </div>
+
+                <div id="mobile_mnu">
+                    <img src="bars-solid-full.svg" alt="" onclick="make_flex()">
+                </div>
+                <div class="links">
+                    <div id="close" onclick="display_of_manu()"><i class="fa-solid fa-square-xmark"></i></div>
+                    <a href="index.html">Home</a>
+                    <a href="search_result.html" onclick="make_new_page('shop now')">Shop</a>
+                    <a href="abt.html">About</a>
+                    <a href="blog.html" id="activeted">Blog</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </div>
+            <div class="fake_header2"></div>
+            <section id="page_header" class="blog_header">
+                <h2>#readmore</h2>
+                <p>Read all case studies about our products!</p>
+            </section>
+
+            <section id="blog">
+                <div class="blog_box">
+                    <div class="blog_pic"><img src="pics/blog/b7.jpg" alt=""></div>
+                    <div class="blog_details">
+                        <h4>The Cotton-Jersey Zip-Up hoodie</h4>
+                        <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr
+                            wolf chartreuse hexagon irony, godard_
+                        </p>
+                        <a href="#">CONTINUE READING</a>
+                    </div>
+                    <h1>13/01</h1>
+                </div>
+                <div class="blog_box">
+                    <div class="blog_pic"><img src="pics/blog/nb.jpg" alt=""></div>
+                    <div class="blog_details">
+                        <h4>The Cotton-Jersey Zip-Up hoodie</h4>
+                        <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr
+                            wolf chartreuse hexagon irony, godard_
+                        </p>
+                        <a href="#">CONTINUE READING</a>
+                    </div>
+                    <h1>13/02</h1>
+                </div>
+                <div class="blog_box">
+                    <div class="blog_pic"><img src="pics/blog/b3.jpg" alt=""></div>
+                    <div class="blog_details">
+                        <h4>The Cotton-Jersey Zip-Up hoodie</h4>
+                        <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr
+                            wolf chartreuse hexagon irony, godard_
+                        </p>
+                        <a href="#">CONTINUE READING</a>
+                    </div>
+                    <h1>13/03</h1>
+                </div>
+                <div class="blog_box">
+                    <div class="blog_pic"><img src="pics/blog/b1.jpeg" alt=""></div>
+                    <div class="blog_details">
+                        <h4>The Cotton-Jersey Zip-Up hoodie</h4>
+                        <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr
+                            wolf chartreuse hexagon irony, godard_
+                        </p>
+                        <a href="#">CONTINUE READING</a>
+                    </div>
+                    <h1>13/04</h1>
+                </div>
+            </section>
+
+            <section id="pagination" class="section-p1">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+            </section>
+
+            <section id="newsletter">
+                <div class="newstext">
+                    <h4>Sign Up For Newsletters</h4>
+                    <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Your email address">
+                    <button class="normal">Sign Up</button>
+                </div>
+            </section>
+
+            <footer class="page">
+                <div class="foot-panel-1">
+                     ↑ Back to Top
+                </div>
+                <div class="foot-panel-2">
+                    <h5>🛒 Cartzone – Your one-stop destination for flavor-packed cravings and fashion-forward finds, delivered to your door in a single swipe!</h5>
+                    <div id="ul_dev">
+                        
+                        <ul>
+                            <span><u>QUICK LINKS</u></span>
+                            <li><a href="search_result.html" onclick="make_new_page('shop now')">Shop</a></li>
+                            <li><a href="abt.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        
+                        <ul>
+                            <span><u>HELP</u></span>
+                            <li>FPQ</li>
+                            <li>Shipping & Returns</li>
+                            <li>Store Policy</li>
+                            <li>Payment Methods</li>
+                        </ul>
+
+                        <ul>
+                            <span><u>FOLLOW US</u></span>
+                            <li><a href="https://www.instagram.com/iam.zeeshan__/">Instagram</a></li>
+                            <li>Facebook</li>
+                            <li>Tuter</li>
+                            <li>TouTube</li>
+                        </ul>
+                    </div>
+                    <div id="about_us">
+                        <a href="#"><img src="pics/logo.png" alt="logo"></a>
+                        <span>Cartzone-Online Shop</span>
+                    </div>
+                </div>
+                <div class="foot-panel-3">
+                    c 2025 Cartzone India. All Rights Reserved
+                </div>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
