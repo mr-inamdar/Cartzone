@@ -1173,6 +1173,7 @@ footer{
         border-bottom-left-radius: 5px;
         border-top-left-radius: 5px;
         padding: 15px 0;
+        color: black;
     }
     .mobile_header #search{
         height: 90%;
