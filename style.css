@@ -1,8 +1,16 @@
+@font-face {
+    font-family: '_my.font_';
+    src: url('pics/font/cartesius-smallcaps.ttf')
+    format("truetype");
+}
+.offers{
+    font-family: '_my.font_';
+}
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:"_my.font_";
     color: white;
 }
 html, body {
@@ -1172,7 +1180,7 @@ footer{
         outline: none;
         border-bottom-left-radius: 5px;
         border-top-left-radius: 5px;
-        padding: 15px 0;
+        padding: 15px 5px;
         color: black;
     }
     .mobile_header #search{
@@ -1418,4 +1426,5 @@ footer{
     #blog .blog_details {
         width: 100%;
     }
+
 }
