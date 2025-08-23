@@ -1365,16 +1365,23 @@ footer{
         margin-top: 10px;
         width: 100%;
     }
+    #banner{
+        flex-wrap: wrap;
+        height: 170vh;
+    }
     #v_banner{
-        display: none;
+        height: 40%;
+        width: 90%;
     }
     #sub_container{
-        width: 70vw;
+        width: 80%;
         max-width: 600px;
+        justify-content: space-evenly;
+        height: 40%;
     }
     #sub_container .pic_banner {
-        height: 30vh;
-        width: 80vw;
+        height: 40%;
+        width: 100%;
     }
     #banner3 .banner_box {
         width: 75vw;
@@ -1428,3 +1435,4 @@ footer{
     }
 
 }
+
